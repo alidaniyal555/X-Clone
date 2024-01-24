@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border-radius: 5px;
+            height: 600px;
+            width: 650px;
+            background: black;
+            color: white;
+            position: relative;
+            top: 70px;
+        }
+
+        .btn-both {
+            position: absolute;
+            top: 22px;
+            left: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        h3,
+        h1,
+        .card input {
+            margin-left: 80px;
+        }
+
+        .card input {
+            height: 50px;
+            width: 470px;
+            margin-left: 80px;
+            background: black;
+            margin-bottom: 20px;
+            color: white;
+            border: 1px solid white;
+            padding: 0px 0px 0px 20px;
+        }
+
+        .card input:hover {
+            border-color: rgb(29, 155, 240) !important;
+        }
+
+        p {
+            margin-left: 80px;
+        }
+
+        .next {
+            position: absolute;
+            left: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 350px;
+            background: rgb(148, 150, 150);
+            bottom: 15px;
+            border-radius: 30px;
+        }
+
+        .next a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <button class="btn-both" onclick="goBack()">
+                <i class="fa fa-window-close"></i>
+            </button>
+            <h3>Step 3 of 5</h3>
+            <h1>Create your account</h1>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Date of birth">
+            <p>By signing up, you agree to the Terms of Service and Privacy Policy, <br>
+                 including Cookie Use. X may use your contact information, including your email <br>
+                  address and phone number for purposes outlined in our Privacy <br>
+                   Policy, like keeping your account secure and personalizing our services, <br>
+                    including ads. Learn more. Others will be able to find you by email or <br>
+                     phone number, when provided, unless you choose otherwise here.</p>
+            <div class="next">
+                <a href="/next_page1">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border-radius: 5px;
+            height: 600px;
+            width: 650px;
+            background: black;
+            color: white;
+            position: relative;
+            top: 70px;
+        }
+
+        .btn-both {
+            position: absolute;
+            top: 22px;
+            left: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        h3,
+        h1,
+        .card input {
+            margin-left: 80px;
+        }
+
+        .card input {
+            height: 50px;
+            width: 470px;
+            margin-left: 80px;
+            background: black;
+            margin-bottom: 20px;
+            color: white;
+            border: 1px solid white;
+            padding: 0px 0px 0px 20px;
+        }
+
+        .card input:hover {
+            border-color: rgb(29, 155, 240) !important;
+        }
+
+        p {
+            margin-left: 80px;
+        }
+
+        .next {
+            position: absolute;
+            left: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 350px;
+            background: rgb(148, 150, 150);
+            bottom: 15px;
+            border-radius: 30px;
+        }
+
+        .next a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Style for the months dropdown */
+        .months-dropdown {
+            position: absolute;
+            width: 120px;
+            display: none;
+            background: black;
+            color: white;
+            border: 1px solid white;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .months-dropdown ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .months-dropdown li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .months-dropdown li:hover {
+            background: rgb(29, 155, 240);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <button class="btn-both" onclick="goBack()">
+                <i class="fa fa-window-close"></i>
+            </button>
+
+            <h3>Step 1 of 5</h3>
+            <h1>Create your account</h1>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <h3>Date of birth</h3>
+            <p>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or
+                something else.</p>
+            <div class="months-dropdown">
+                <ul>
+                    <li onclick="selectMonth('January')" value="1">January</li>
+                    <li onclick="selectMonth('February')" value="2">February</li>
+                    <li onclick="selectMonth('March')" value="3">March</li>
+                    <li onclick="selectMonth('March')" value="3">April</li>
+                    <li onclick="selectMonth('March')" value="3">May</li>
+                    <li onclick="selectMonth('March')" value="3">June</li>
+                    <li onclick="selectMonth('March')" value="3">July</li>
+                    <li onclick="selectMonth('March')" value="3">Augut</li>
+                    <li onclick="selectMonth('March')" value="3">September</li>
+                    <li onclick="selectMonth('March')" value="3">October</li>
+                    <li onclick="selectMonth('March')" value="3">November</li>
+                    <li onclick="selectMonth('March')" value="3">December</li>
+
+                </ul>
+            </div>
+            <input id="monthInput" style="width: 120px;" type="text" placeholder="Month" onclick="toggleDropdown()">
+            <input style="width: 70px;" type="text" placeholder="Day">
+            <input style="width: 90px;" type="text" placeholder="Year">
+            <div class="next">
+                <a href="/Next">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function toggleDropdown() {
+            var dropdown = document.querySelector('.months-dropdown');
+            dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function selectMonth(month) {
+            document.getElementById('monthInput').value = month;
+            toggleDropdown();
+        }
+
+    </script>
+</body>
+
+</html>

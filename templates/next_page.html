@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border-radius: 5px;
+            height: 600px;
+            width: 650px;
+            background: black;
+            color: white;
+            position: relative;
+            top: 70px;
+        }
+
+        .btn-both {
+            position: absolute;
+            top: 22px;
+            left: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        h3,
+        h1,
+        .card input {
+            margin-left: 80px;
+        }
+
+        .card input {
+            height: 50px;
+            width: 470px;
+            margin-left: 80px;
+            background: black;
+            margin-bottom: 20px;
+            color: white;
+            border: 1px solid white;
+            padding: 0px 0px 0px 20px;
+        }
+
+        .card input placeholder {
+            margin-left: 5px;
+        }
+
+        .card input:hover {
+            border-color: rgb(29, 155, 240) !important;
+        }
+
+        p {
+
+            margin-left: 80px;
+        }
+
+        .next {
+            position: absolute;
+            left: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 350px;
+            background: rgb(148, 150, 150);
+            ;
+            bottom: 15px;
+            border-radius: 30px;
+        }
+
+        .next a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .blue {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 105px;
+            bottom: 70%;
+            background: black;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <button class="btn-both" onclick="goBack()">
+                <i class="fa fa-window-close"></i>
+            </button>
+            <h3>Step 2 of 5</h3>
+            <h1>Customize your experience</h1>
+            <h3>Track where you see X content across the web</h3>
+            <p>X uses this data to personalize your experience. This web <br>
+                browsing history will never be stored with your name, <br>
+                email, or phone number.</p>
+
+            <button class="blue" onclick="changeColor(this)">
+                <i class="fa-thin fa-check"></i>
+            </button>
+
+
+            <p>By signing up, you agree to our Terms, Privacy Policy, and <br>Cookie Use. X may use your
+                contactinformation, including your <br>
+                email address and phone number for purposes outlined in our <br>
+                Privacy Policy.
+                Learn more</p>
+            <div class="next">
+                <a href="/next_page1">Next</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function changeColor(button) {
+            button.style.backgroundColor = 'rgb(29, 155, 240)';
+            button.style.color = 'white';
+        }
+    </script>
+</body>
+
+</html>

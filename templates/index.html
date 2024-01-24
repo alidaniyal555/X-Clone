@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .col-lg-6 {
+            color: white;
+            margin-top: 130px;
+        }
+
+        .col-lg-6 h1 {
+            font-size: xx-large;
+        }
+
+        .col-log-6 img {
+            height: 500px;
+            width: 500px;
+        }
+
+        a {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+        }
+
+        .btn-one {
+            height: 40px;
+            width: 300px;
+            border-radius: 30px;
+            background: rgb(29, 155, 240);
+            ;
+        }
+
+        .btn-one a {
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .btn-both {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 300px;
+            border-radius: 30px;
+        }
+
+        .btn-booth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 300px;
+            border-radius: 30px;
+            margin-top: 10px;
+        }
+
+        .btn-myo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 300px;
+            border-radius: 30px;
+            border: 1px solid white;
+            background-color: black;
+        }
+
+        .btn-myo a {
+            text-decoration: none;
+            color: rgb(29, 155, 240);
+            ;
+        }
+
+        .lia {
+            text-align: center;
+            padding-right: 25%;
+        }
+
+        .lia::before {
+            content: '';
+            border: 0.5px solid white;
+            position: absolute;
+            left: 57%;
+            top: 358px;
+            right: 0%;
+            width: 131px;
+
+        }
+
+        .lia::after {
+            content: '';
+            border: 0.5px solid white;
+            position: absolute;
+            left: 67%;
+            top: 358px;
+            right: 0%;
+            width: 135px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navbar a {
+            color: white;
+            font-weight: 400;
+            margin-right: 6px;
+        }
+
+        footer {
+            width: 96%;
+            position: absolute;
+            top: 90%;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-l0g-6">
+                <img src="/static/logo.jpg" alt="logo">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h1>Happening now</h1>
+            <h3>Join today.</h3>
+            <div>
+                <button class="btn-both">
+                    <i style="font-size:24px" class="fa">&#xf0d5;</i>
+                    <a href="/Sign up with Google">
+                        Sign up with Google</a>
+                </button>
+            </div>
+            <button class="btn-booth">
+                <i style="font-size:24px" class="fa">&#xf179;</i>
+                <a href="/Sign up with Apple">Sign up with Apple</a>
+            </button>
+            <div class="lia">or</div>
+            <div>
+                <button class="btn-one">
+                    <a href="/Create Account ">Create Account</a>
+                </button>
+                <p>By signing up, you agree to the Terms of Service and Privacy <br>
+                    Policy, including Cookie Use.</p>
+                <h4>Already have an account?</h4>
+                <button class="btn-myo">
+                    <a href="/Sign in">Sign in</a>
+                </button>
+            </div>
+        </div>
+        <footer>
+
+            <div id="navbar">
+                <a href="/About">About</a>
+                <a href="/Download the X app">Download the X app</a>
+                <a href="/Help Center">Help Center</a>
+                <a href="/Terms of Service">Terms of Service</a>
+                <a href="/Privacy Policy">Privacy Policy</a>
+                <a href="/Cookie Policy">Cookie Policy</a>
+                <a href="/Accessibility">Accessibility</a>
+                <a href="/Ads info">Ads info</a>
+                <a href="/Blog">Blog</a>
+                <a href="/Status">Status</a>
+                <a href="/Careers">Careers</a>
+                <a href="/Brand Resources">Brand Resources</a>
+                <a href="/Advertising">Advertising</a>
+                <a href="/Marketing">Marketing</a>
+                <a href="/X for Business">X for Business</a>
+                <a href="/Developers">Developers</a>
+                <a href="/Directory">Directory</a>
+                <br>
+                <a href="/Settings">Settings</a>
+                <a href="/&#169; 2024 X Corp.">&#169; 2024 X Corp.</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            border-radius: 5px;
+            height: 500px;
+            width: 650px;
+            background: black;
+            color: white;
+            position: relative;
+            top: 115px;
+        }
+
+        .btn-both {
+            position: absolute;
+            top: 22px;
+            left: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+
+        h3,
+        h1,
+        .card input {
+            margin-left: 80px;
+        }
+
+        .card input {
+            height: 50px;
+            width: 350px;
+            margin-bottom: 20px;
+            background: black;
+            color: white;
+            border: 1px solid white; /* Set initial border color to white */
+        }
+
+        .card input:focus {
+            border-color: blue; /* Set border color to blue when the input is in focus */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <button class="btn-both" onclick="closeWindow()">
+                <i class="fa fa-window-close"></i>
+            </button>
+            <h3>Step 1 of 5</h3>
+            <h1>Create your account</h1>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+        </div>
+    </div>
+
+    <script>
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+</body>
+
+</html>

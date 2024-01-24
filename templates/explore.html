@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh; /* Make the body take full height of the viewport */
+        }
+
+        .container {
+            border: 1px solid white;
+            border-color: white;
+            height: 100px; /* Adjust the height as needed */
+            width: 30%;
+            display: flex;
+            justify-content: space-between; /* To push the elements to the ends */
+            align-items: center;
+            
+        }
+
+        input {
+            height: 45px;
+            width: 70%; /* Adjust the width as needed */
+            border-radius: 25px;
+            font-size: inherit;
+            margin-right: 10px; /* Adjust the margin as needed */
+        }
+
+        .fa-cog {
+            color: white;
+        }
+    </style>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<body>
+    <div class="container">
+        <i class="fa fa-search" style="color: white;"></i>
+        <input type="text" placeholder="Search">
+        <i class="fa fa-cog"></i>
+    </div>
+</body>
+
+</html>

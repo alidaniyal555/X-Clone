@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==">
+    <title>My page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+        }
+
+        #navbar {
+            margin: 80px 0px 0px 65px;
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+            color: black;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #navbar a {
+            font-size: 20px;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        #content {
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-left: 200px;
+            padding-top: 85px;
+        }
+
+        #content button {
+            color: white;
+            background: black;
+            display: contents;
+        }
+
+        #content:hover {
+            color: rgb(31, 30, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+
+
+                <div id="navbar">
+                    <i class='bx bx-home'></i>
+                    <a href="/home">Home</a>
+                    <a href="/explore">Explore</a>
+                    <a href="/notification">Notofication</a>
+                    <a href="/message">Message</a>
+                    <a href="/grock">Grock</a>
+                    <a href="/lists">Lists</a>
+                    <a href="/communities">Communities</a>
+                    <a href="/Premium">Premium</a>
+                    <a href="/profile">Profile</a>
+                    <a href="/more">More</a>
+                </div>
+
+
+                <div id="content">
+                    <button>
+                        <h3>Foryou</h3>
+                    </button>
+                    <button>
+                        <h3>Following</h3>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeContent(page) {
+            document.getElementById('content').innerHTML = `<h2>${page}</h2><p>Welcome to the ${page.toLowerCase()} page!</p>`;
+        }
+    </script>
+</body>
+
+</html>
